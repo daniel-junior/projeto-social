@@ -46,18 +46,25 @@ body {
     gap: 32px;
 }
 .conteudo-principal-escrito-titulo {
+    margin-top: 15px;
     font-family:'Catamaran', sans-serif;
     font-weight: 400;
     font-size: 64px;
     color: #FEFEFE;
 }
 .conteudo-principal-escrito-subtitulo {
+    height: 48px;
+    display: block;
+    margin: 0 auto;
     font-family:'Sarala', sans-serif;
     font-weight: 400;
     font-size: 24px;
     color: #FEFEFE;
 }
 .conteudo-principal-escrito-botao {
+    height: 48px;
+    display: block;
+    margin: 0 auto;
     background-color: #FEFEFE;
     width: 180px;
     height: 60px;
@@ -72,11 +79,6 @@ body {
     background-color: rgba(243, 240, 240, 0.897);
     transition: 0.5s;
     transform: translate(+3px, +3px);
-}
-.conteudo-principal-imagem {
-    margin-top: 10px;
-    height: 300px;
-    border-radius: 50% 50%;
 }
 .conteudo-secundario {
     display: flex;
@@ -95,6 +97,7 @@ body {
     margin-bottom: 16px;
 }
 .conteudo-secundario-paragrafo {
+    text-align: center;
     font-family:'Sarala', sans-serif;
     font-weight: 300;
     font-size: 18px;
