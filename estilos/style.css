@@ -46,6 +46,9 @@ body {
     gap: 32px;
 }
 .conteudo-principal-escrito-titulo {
+    height: 48px;
+    display: block;
+    margin: 0 auto;
     margin-top: 15px;
     font-family:'Catamaran', sans-serif;
     font-weight: 400;
