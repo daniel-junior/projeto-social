@@ -1,23 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Page Title</title>
     <link rel="stylesheet" href="estilos/style.css">
-    <title>Projeto Redes Sociais</title>
 </head>
 <body>
-    <main>
-        <section id="telefone">
-            <iframe src="home.html" name="tela" id="tela" frameborder="0">
-                Seu navegador não é compativel com isso.
-            </iframe>
+    <header class="cabecalho">
+        <img class="cabecalho-imagem" src="imagens/unnamed.gif" alt="lodo-daniel-junior">
+        <nav class="cabecalho-menu">
+            <a class="cabecalho-menu-item" href="https://github.com/daniel-junior/" target="_blank">Github</a>
+        </nav>
+    </header>
+    <main class="conteudo">
+        <section class="conteudo-principal">
+            <div class="conteudo-principal-escrito">
+                <h1 class="conteudo-principal-escrito-titulo">Daniel Junior</h1>
+                <h2 class="conteudo-principal-escrito-subtitulo">Desenvolvedor Web</h2>
+                <button class="conteudo-principal-escrito-botao"> <a href="https://github.com/daniel-junior/" target="_blank">Acesse</a></button>
+            </div>
+            <img class="conteudo-principal-imagem" src="imagens/logo-github.jpg" alt="github">
         </section>
-        <section id="redes-sociais">
-            <a href="home.html" target="tela"><img src="imagens/logo-home.jpg" alt="Home"></a><br>
-            <a href="github.html" target="tela"><img src="imagens/logo-github.jpg" alt="Github"></a><br>
+        <section class="conteudo-secundario">
+            <h3 class="conteudo-secundario-titulo">Steve Jobs</h3>
+            <p class="conteudo-secundario-paragrafo">Design não é apenas o que parece e o que se sente. Design é como funciona.</p>
+        </section>
     </main>
+    <footer class="rodape">
+        <p>site feito em HTML 5</p>
+        <img class="rodape-imagem" src="imagens/html5-badge-h-css3-semantics.png" alt="">
+        <p>Desensolvido por | Daniel Junior</p>
+    </footer>
 </body>
 </html>
