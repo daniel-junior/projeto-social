@@ -40,13 +40,8 @@ body {
     align-items: center;
     justify-content: space-around;
 }
-.conteudo-principal-escrito {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-}
+
 .conteudo-principal-escrito-titulo {
-    text-align: center;
     margin-top: 15px;
     font-family:'Catamaran', sans-serif;
     font-weight: 400;
@@ -54,12 +49,11 @@ body {
     color: #FEFEFE;
 }
 .conteudo-principal-escrito-subtitulo {
-    height: 48px;
-    display: block;
-    margin: 0 auto;
+    margin-bottom: 20px;
+    text-align: center;
     font-family:'Sarala', sans-serif;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 18px;
     color: #FEFEFE;
 }
 .conteudo-principal-escrito-botao {
