@@ -1,121 +1,118 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2? família=Catamarã:wght@900&display=swap');
-* {
+
+@import url('https://fonts.googleapis.com/css2?família=Montserrat+Suplentes:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?família=Anton&display=swap');
+
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html,body {
+    height: 100%;
+}
+
+.parent {
+    display: flex;
+}
+.sidebar {
+    width: 20%;
+    height: 100%;
+    position: fixed;
+    background-color: #660099;
+}
+
+.sidebar-pos {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.img-sidebar {
+    text-align: center;
+}
+
+.img-sidebar img {
+    width: 70%;
+    border: 8px solid #801fb1;
+    border-radius: 50%;
+}
+
+.menu {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.menu a {
+    color: white;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 20px;
     text-decoration: none;
 }
-body {
-    font-size: 100%;
-    background: linear-gradient( #002E46, #002198, #020E41);
+.menu a.selected:hover {
+    color: lightgray;
 }
-.cabecalho {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    padding: 24px;
+
+.content {
+    position: absolute;
+    left: 20%;
+    width: 80%;
+    height: 100%;
+    overflow-y: auto;
+    padding: 0 3%;
+    background-color:#F7F7F7 ;
 }
-.cabecalho-imagem {
-    height: 72px;
+
+section.descricao {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
-.cabecalho-menu {
-    display: flex;
-    gap: 32px;
+
+section.descricao h2 {
+    font-family: 'Anton', sans-serif;
+    color: #660099;
+    font-size: 46px;
 }
-.cabecalho-menu-item {
-    font-family:'Sarala', sans-serif;
-    color: #FEFEFE;
-    font-weight: 400;
+section.descricao h2 > span {
+    color: black;
+}
+
+section.descricao h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 15px 0;
+    color: #170000;
     font-size: 18px;
 }
-.conteudo {
-    margin-bottom: 48px;
-    border-top: 0.4px solid #FEFEFE;
+
+section.descricao p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #170000;
+    font-size: 18px;
+    margin-top: 40px;
 }
-.conteudo-principal {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-}
-.conteudo-principal-escrito {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-}
-.conteudo-principal-escrito-titulo {
+
+.icons-social {
     margin-top: 20px;
-    font-family:'Catamaran', sans-serif;
-    font-weight: 400;
-    font-size: 64px;
-    color: #FEFEFE;
 }
-.conteudo-principal-escrito-subtitulo {
-    font-family:'Sarala', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    color: #FEFEFE;
-}
-.conteudo-principal-escrito-botao {
-    background-color: #FEFEFE;
-    width: 180px;
-    height: 60px;
-    border: none;
-    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
-    font-family:'Sarala', sans-serif;
-    font-weight: 400;
-    font-size: 24px;
-    color: #FEFEFE;
-}
-.conteudo-principal-imagem {
-    height: 100px;
-    border-radius: 50% 50%;
-}
-.conteudo-principal-escrito-botao:hover {
-    background-color: rgba(243, 240, 240, 0.897);
-    transition: 0.5s;
-    transform: translate(+3px, +3px);
-}
-.conteudo-secundario {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 24px;
-    margin-top: 48px;
-}
-.conteudo-secundario-titulo {
-    border-top: 0.4px solid #FEFEFE;
-    padding-top: 48px;
-    font-family:'Catamaran', sans-serif;
-    font-weight: 400;
-    font-size: 24px;
-    color: #FEFEFE;
-    margin-bottom: 16px;
-}
-.conteudo-secundario-paragrafo {
-    text-align: center;
-    font-family:'Sarala', sans-serif;
-    font-weight: 300;
-    font-size: 18px;
-    color: #FEFEFE;
-}
-.rodape {
-    padding: 32px;
-    border-top: 0.4px solid #FEFEFE;
-}
-.rodape-imagem {
-    height: 48px;
-    display: block;
-    margin: 0 auto;
-}
-.rodape p {
-    padding: 10px;
-    font-family:'Catamaran', sans-serif;
-    font-weight: 300;
+
+.icons-social a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
+    color: black;
+    margin: 0 10px;  
     text-align: center;
-    color: #FEFEFE;
+}
+.icons-social a:hover {
+    color: #660099;
+}
+
+.icons-social img {
+    width: 30px;
+    height: 30px;
+    border-radius: 20%;
 }
