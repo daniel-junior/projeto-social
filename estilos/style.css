@@ -1,62 +1,78 @@
 @charset "UTF-8";
-
+@import url('https://fonts.googleapis.comcss2?family=Baloo+2&disolay=swap');
 * {
-    margin: 0px;
-    padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-html, body {
-    height: 100vh;
-    width: 100vw;
-    background-color: black;
-}
-
-body {
-    
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-main {
-    position: relative;
-    height: 100vh;
-}
-
-section#telefone {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    height: 625.01px;
-    width: 311px;
-    background: url('../imagens/frame-iphone.png') no-repeat;
-}
-
-iframe#tela {
-    position: relative;
-    top: 80px;
-    left: 22px;
-    width: 266.5px;
-    height: 471px;
-}
-
-section#redes-sociais {
-    text-align: right;
-}
-
-section#redes-sociais img {
-    width: 50px;
-    margin: 10px;
-    border-radius: 50%;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
     box-sizing: border-box;
+    font-family: 'Bloo 2', cursive;
 }
-
-section#redes-sociais img:hover {
-    border: 2px solid rgba(255, 255, 255, 0.637);
-    transform: translate(-3px, -3px);
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.623);
-    transition: transform .3s, border .2s;
+body {
+    margin: 0;
+    background: #0F1317;
+}
+.wrapper,
+.container,
+.content {
+    display: flex;
+}
+.wrapper {
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.content {
+    position: relative;
+    padding: 0.5rem;
+    margin: 0 1rem;
+    cursor: pointer;
+    border-radius: 1rem;
+    background: #E3E2FD;
+    box-shadow: 0px 10px 10p rgba(0, 0, 0, 0.1);
+}
+i {
+    padding: 3px;
+    color: #001C76;
+    font-size: 1.5rem;
+}
+.toolip {
+    opacity: 0;
+    position: absolute;
+    padding: 0.5rem 1rem;
+    background: #E4E1DF;
+    color: #001C76;
+    font-size: 1rem;
+    white-space: nowrap;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    pointer-events: none;
+}
+.toolip:after {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: #E4E1DF;
+    border-radius: 3px;
+}.content,
+.toolip,
+ i {
+    transition: .3s;
+}
+.content:hover {
+    background:#E4E1DF ;
+}
+.content:hover {
+    color: #E3E2FD;
+}
+.toolip {
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 100%);
+}
+.toolip:after {
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    top: 1px;
+}
+.content:hover .toolip {
+    opacity: 1;
+    bottom: -1rem;
 }
