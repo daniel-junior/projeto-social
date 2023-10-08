@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.comcss2?family=Baloo+2&disolay=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 * {
     box-sizing: border-box;
     font-family: 'Bloo 2', cursive;
@@ -78,7 +79,11 @@ i {
 }
 header#cabecalho {
     text-align: center;
-    font-size: medium;
     background-color: #E3E2FD;
     padding: 5px;
+}
+header#cabecalho h1 {
+    font-size: 20px;
+    font-family: 'Audiowide', cursive;
+    color: #001C76;
 }
