@@ -76,3 +76,9 @@ i {
     opacity: 1;
     bottom: -1rem;
 }
+header#cabecalho {
+    text-align: center;
+    font-size: medium;
+    background-color: #E3E2FD;
+    padding: 5px;
+}
